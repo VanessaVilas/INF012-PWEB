@@ -1,9 +1,15 @@
-import AppRoutes from './routes/index.jsx';
+import { Route, Routes } from "react-router-dom"
+
+import HomePage from "./pages/HomePage"
 
 export default function App() {
   return (
     <div>
-      <AppRoutes/>
+      <main className="container page-content">
+        <Routes>
+          <Route path="/" element={<HomePage/>}/>
+        </Routes>
+      </main>
     </div>
   );
 }
